@@ -1,0 +1,103 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Jura', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    height: 100%;
+    /* max-width: 1162px; */
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+img {
+    display: block;
+}
+
+.main-page {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    margin-top: 25px;
+}
+
+.text-h1 {
+    font-family: 'Ubuntu';
+    font-size: 96px;
+    color: #000000;
+    line-height: 10px;
+}
+
+.logo {
+    margin-left: auto;
+}
+
+.first {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    font-family: 'Jura';
+    font-size: 24px;
+    color: #000000;
+}
+
+.buttom {
+    width: 573px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.but-1, .but-2, .but-3 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: #000000;
+    align-items: center;
+    justify-content: center;
+}
+
+.but-3 {
+    border: 1px solid #000000;
+}
+
+.but-1:hover {
+    opacity: 0.8;
+    border: 1px solid #000000;  
+}
+
+.but-2:hover {
+    opacity: 0.8;
+    border: 1px solid #000000;
+}
+
+.but-3:hover {
+    opacity: 0.8;
+    color: #ffffff;
+    background: #000;
+    border: none;
+}
+
+.p {
+    width: 573px;
+    line-height: 28px;
+    text-align: left;
+}
