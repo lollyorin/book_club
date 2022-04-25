@@ -78,6 +78,7 @@ img {
     color: #000000;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .but-3 {
@@ -103,6 +104,87 @@ img {
     border: none;
     transition: 0.3s;
 }
+
+/* линия наротив текста */
+
+  .but-1::before,
+  .but-1::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+	height: 1px;
+	background: #000000;
+    border: solid #FFF;
+	border-width: 0 10px;
+  }
+
+  .but-1::before {
+    margin-left: -100%;
+  }
+
+  .but-1::after {
+    margin-right: -100%;
+  }
+
+  .but-2::before,
+  .but-2::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+	height: 1px;
+	background: #000000;
+    border: solid #FFF;
+	border-width: 0 10px;
+  }
+
+  .but-2::before {
+    margin-left: -100%;
+  }
+
+  .but-2::after {
+    margin-right: -100%;
+  }
+
+  /* линия наротив текста */ 
+
+  .dropdown {
+    width: 573px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    }
+
+    .dropdown-book,
+    .dropdown-news {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .dropdown-book a,
+      .dropdown-news a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-book a:hover {background-color: #ddd;}
+
+      .dropdown:hover .dropdown-book {display: block;}
+
+      .dropdown-news a:hover {background-color: #ddd;}
+
+      .dropdown:hover .dropdown-news {display: block;}
+
+
 
 p {
     width: 573px;
@@ -139,3 +221,38 @@ p {
 .img2 {
     padding: 100px;
 }
+
+/* дроп меню проба */
+
+/* .dropdown {
+    width: 573px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    }
+
+    .dropdown-book,
+    .dropdown-news {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .dropdown-book a,
+      .dropdown-news a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-book a:hover {background-color: #ddd;}
+
+      .dropdown:hover .dropdown-book {display: block;}
+
+      .dropdown-news a:hover {background-color: #ddd;}
+
+      .dropdown:hover .dropdown-news {display: block;} */
