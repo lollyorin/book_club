@@ -210,49 +210,38 @@ p {
     font-size: 24px;
     color: #fcfcfc;
     background: #000;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .p-2 {
     width: 573px;
-    height: 380px;
+    height: 355px;
     background: #ffffff;
     color: #000000;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 100px;
 }
 
-.img2 {
-    padding: 100px;
-}
-
-/* ЧАСТЬ 3 */
-
-.third {
-    /* display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center; */
-    margin: 30px;
-    font-family: 'Jura';
-    font-size: 24px;
-    color: #000000;
-}
 
 .item-1, .item-2, .item-3, .item-4  {
-    border: solid 1px #000000;
+    border: solid 1px #ffffff;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    padding: 20px;
+    padding-left: 20px;
+    margin-bottom: 20px;
 }
 
-.group-1, .group-2 {
+.group-item{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column;
     justify-content: space-between;
     align-items: center;
+    margin: 30px;
 }
